@@ -303,7 +303,15 @@ config MACH_PICO
 		default y
 		bool "Pico"
 		help
-		Support for Pico (PDA phone).
+		  Support for Pico (PDA phone).
+
+config MACH_GOLFU
+		depends on ARCH_MSM7X27A
+		depends on !MSM_STACKED_MEMORY
+		default y
+		bool "Golfu"
+		help
+			Support for Golfu (PDA phone).
 
 config MACH_MSM7X30_SURF
        depends on ARCH_MSM7X30
